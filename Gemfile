@@ -7,8 +7,9 @@ gem 'sqlite3'
 
 gem 'spring', :group => :development
 
-# Use unicorn as the app server
 gem 'unicorn'
+
+gem 'aws-sdk', '~> 2'
 
 group :test do
   gem 'rspec'
