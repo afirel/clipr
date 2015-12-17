@@ -1,0 +1,10 @@
+app:
+  build: .
+  ports:
+    - "3000:3000"
+  command: "bundle exec unicorn -c config/unicorn.rb"
+  environment:
+    AWS_REGION: 'eu-west-1'
+    #AWS_ACCESS_KEY_ID: ''
+    #AWS_SECRET_ACCESS_KEY: ''
+    #AWS_S3_BUCKET: ''
