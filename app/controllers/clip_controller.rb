@@ -1,8 +1,8 @@
 class ClipController < ApplicationController
 
   def create
-    id = Clip.create(request.body.read)
-    render status: 201, json: {id: id}
+    clip = Clip.create(request.body.read)
+    render status: 201, json: {id: clip.id}
   end
 
   def show
